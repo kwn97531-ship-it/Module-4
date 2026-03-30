@@ -11,8 +11,21 @@ To write a Python program that merges **two dictionaries** and combines their ke
 
 ## 🧾 Program
 
-Add code here
+dict1 = { "a": 10, "b": 20, "c": 30 }
+
+dict2 = { "b": 200, "d": 40, "e": 50 }
+
+def merge(d1, d2): merged_dict = {**d1, **d2} return merged_dict
+
+result = merge(dict1, dict2)
+
+print("Merged Dictionary:", result)
 
 ## Output
+<img width="757" height="229" alt="image" src="https://github.com/user-attachments/assets/dd97e068-ebea-4be3-a29e-7e63cd1a36ba" />
+
 
 ## Result
+The Python program successfully merges two dictionaries using the unpacking (**) operator. All key-value pairs from both dictionaries are combined into a single dictionary. If a key is present in both dictionaries, the value from the second dictionary overwrites the value from the first.
+
+The final merged dictionary contains all unique keys with their corresponding values.
